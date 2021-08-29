@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500&display=swap");
+
+body {
+  background: #e9f3fc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.full {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.box-one,
+.box-two,
+.box-three {
+  background: white;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  box-shadow: 0px 10px 9px -10px #cccccc;
+  margin: 12px;
+}
+.top-head {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+}
+.top-para {
+  font-size: 14px;
+  margin-top: 2px;
+  color: hsl(0, 0%, 50%);
+}
+.top-right {
+  box-sizing: content;
+  padding: 0px 20px;
+  margin-top: 0px;
+  background-color: #e9f3fc;
+  border: 1px solid #e9f3fc;
+  border-radius: 15px;
+  margin: 10px;
+}
+.top-left {
+  padding-top: 12px;
+}
+.mid {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-one,
+.bottom-two,
+.bottom-three {
+  height: 50px;
+  width: 300px;
+  color: #ffffff;
+  border-radius: 10px;
+  background: #ff7556;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1px 0px;
+  margin-top: 0px;
+}
+.box-one-mid,
+.box-two-mid,
+.box-three-mid {
+  color: #251349;
+  font-size: 17px;
+}
+.fas {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.fa-times-circle {
+  opacity: 0.45;
+}
+.box-one:hover,
+.box-two:hover,
+.box-three:hover {
+  transition: all 0.5s;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 15px 2px rgb(162, 67, 210);
+  background: #251349;
+  color: #ffffff;
+  border: 1px solid #3f286b;
+}
+.box-one:hover .top,
+.box-two:hover .top,
+.box-three:hover .top {
+  box-shadow: 0px 10px 9px -10px black;
+}
+.box-one:hover .top-right,
+.box-two:hover .top-right,
+.box-three:hover .top-right {
+  background-color: #3f286b;
+  border: none;
+}
+
+.box-one:hover .box-one-mid,
+.box-two:hover .box-two-mid,
+.box-three:hover .box-three-mid {
+  color: white;
+}
